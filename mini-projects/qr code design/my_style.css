@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #d5e1ef;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  width: 100%;
+  max-width: 302px;
+  height: 470px;
+  background-color: #fffffd;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.qr-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.txt {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.nrm-txt {
+  text-align: center;
+  color: #8b8e97;
+}
