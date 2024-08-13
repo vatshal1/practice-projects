@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(10, 19, 115);
+}
+
+body {
+  height: 100%;
+  background: url("/assests/scenary.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px;
+}
+
+.glass-container {
+  height: 500px;
+  width: 350px;
+  padding: 30px 50px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 0, 0.027);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  /* line-height: 185%; */
+
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(211, 243, 29, 0.447);
+  border-right: 1px solid rgba(211, 243, 29, 0.447);
+  border-left: 1px solid rgba(216, 235, 108, 0.146);
+  border-bottom: 1px solid rgba(235, 246, 174, 0.507);
+  box-shadow: 2px -3px 8px 5px rgba(240, 233, 157, 0.064);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 253, 0.224),
+    rgba(229, 252, 95, 0.075)
+  );
+}
+
+.heading {
+  margin: 30px;
+  color: rgb(243, 64, 4);
+}
