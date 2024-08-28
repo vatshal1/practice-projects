@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  padding: 5px;
+  color: blue;
+  background-color: yellow;
+}
+.frm-dsg {
+  padding-left: 15px;
+  margin: auto;
+  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+}

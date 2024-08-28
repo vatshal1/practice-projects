@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading1 {
+  margin-top: 10px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  background-color: aqua;
+  padding: 1rem;
+  width: 80%;
+  margin-left: 8.7rem;
+}
+
+.main-card {
+  background-color: #dcd0d0d6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1px solid;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.main-card img {
+  height: 150px;
+  width: 150px;
+}
+.main-card p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/*
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.user-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.user-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .friend-btn{
+background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+*/
