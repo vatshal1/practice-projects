@@ -6,10 +6,10 @@ btn.addEventListener("click", joke);
 
 //-> using async/ await
 async function joke() {
-  para.textContent = `${item.joke}`;
+  para.classList.remove("fade");
   const response = await fetch(url);
   const data = await response.json();
 
   para.innerText = `${data.joke}`;
-  para.textContent = `${item.joke}`;
+  para.classList.add("fade");
 }
