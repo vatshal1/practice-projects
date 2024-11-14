@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 60%;
+  max-width: 60%;
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.container .things {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .things button {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: transparent;
+
+  &:active {
+    background-color: black;
+    color: white;
+  }
+}
+
+.scoreCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.gesture {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-size: 8rem;
+}
+.shakeUserHands {
+  animation: shakeUserHands;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+.shakeComputerHands {
+  animation: shakeComputerHands;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+/*-> animation  */
+
+@keyframes shakeUserHands {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-55deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes shakeComputerHands {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(55deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/*-> responsiveness */
+
+@media (max-width: 880px) {
+  .container {
+    max-width: 80%;
+  }
+  .container .things button {
+    font-size: 1.2rem;
+  }
+  .scoreCard {
+    font-size: 1.2rem;
+  }
+  .gesture {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .container .things button {
+    font-size: 1.2rem;
+  }
+  .scoreCard {
+    font-size: 1rem;
+  }
+  .gesture {
+    font-size: 5rem;
+  }
+}
