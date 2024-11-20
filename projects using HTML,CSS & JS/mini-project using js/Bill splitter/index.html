@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill-splitter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="calculator">
+        <div class="bill">
+          <p>Bill</p>
+
+          <div class="sign_bill">
+            <span class="sign">$</span>
+            <input type="number" id="inp" />
+          </div>
+        </div>
+
+        <div class="tip">
+          <span>Select Tip</span>
+          <article class="buttons disabled">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>80%</button>
+          </article>
+          <input
+            type="number"
+            placeholder="Custom Tip in Percentage"
+            id="inp_tip"
+            disabled
+          />
+        </div>
+
+        <div class="people">
+          <p>Number of People</p>
+
+          <input
+            type="number"
+            placeholder="Number of people"
+            id="people_count"
+            disabled
+          />
+        </div>
+
+        <button class="gnrt-bill" disabled>Generate Bill</button>
+      </section>
+
+      <section class="result">
+        <h3>Tip amount: <span class="amount">$100</span></h3>
+        <h3>Total: <span class="total">$1000</span></h3>
+        <h3>Each Person Bill: <span class="per-person">$40</span></h3>
+        <button disabled>Reset</button>
+      </section>
+    </main>
+  </body>
+</html>

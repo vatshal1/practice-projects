@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.container p {
+  margin-bottom: 0.3rem;
+}
+.calculator {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.sign_bill {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  display: flex;
+}
+.sign {
+  font-size: 1.2rem;
+  /* padding: 0.2rem; */
+}
+
+.bill input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
+  padding-left: 0.4rem;
+}
+
+.calculator .tip {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calculator button {
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  background-color: blueviolet;
+  color: white;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+
+.disabled button {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.people input,
+.tip input {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: black;
+}
+
+.selected {
+  outline: 4px solid orange;
+}
+
+/*-> second box  */
+.result {
+  /* height: 100%; */
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.result button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+/* -> js dom  */
+
+button:disabled,
+input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh;
+    gap: 1rem;
+  }
+
+  .result {
+    height: 50%;
+  }
+}
