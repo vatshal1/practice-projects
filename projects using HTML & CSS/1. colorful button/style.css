@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 4px solid;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/*-> hover effect  */
+.button:hover button {
+  color: bisque;
+  padding: 1.1rem 2.2rem;
+}
+
+/*-> button border decided by parent element  */
+.button {
+  border: 0.5rem solid;
+  border-image: linear-gradient(
+    230deg,
+    #eeaf61,
+    #fb9062,
+    #ee5d6c,
+    #ce4493,
+    #6a0d83
+  );
+  border-image-slice: 1;
+  &:hover {
+    border-image: linear-gradient(
+      115deg,
+      #eeaf61,
+      #fb9062,
+      #ee5d6c,
+      #ce4493,
+      #6a0d83
+    );
+    border-image-slice: 1;
+  }
+}
