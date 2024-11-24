@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sub-text:before {
+  content: "Coding";
+  background-color: rgba(0, 0, 255, 0.8);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  animation-name: words;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  color: white;
+}
+
+@keyframes words {
+  30% {
+    content: "Football";
+  }
+
+  60% {
+    content: "Reading";
+  }
+  90% {
+    content: "Chess";
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.circle {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border: none;
+  border-radius: 50%;
+}
+
+.c1 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+.c2 {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+}
+.c3 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.c4 {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+}
