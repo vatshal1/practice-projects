@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  /* place-content: center; */
+  height: 100vh;
+  /* overflow: hidden; */
+  padding-top: 1rem; /*! prevent margin-collapsing*/
+}
+
+.container {
+  margin-top: 1rem;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 900px;
+}
+
+.container input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.string {
+  position: relative;
+  background-color: antiquewhite;
+  margin-block: 2rem;
+  text-align: start;
+  padding: 0.8rem;
+}
+
+.string .case-type {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  padding: 4px 3px;
+}
