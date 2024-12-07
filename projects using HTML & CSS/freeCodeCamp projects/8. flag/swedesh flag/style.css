@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --height: 400px;
+}
+
+.flag-box {
+  background-color: blueviolet;
+  height: var(--height);
+  width: calc(var(--height) * 8 / 5);
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.stripe {
+  background-color: yellow;
+  position: absolute;
+}
+
+.vertical {
+  height: var(--height);
+  width: calc(var(--height) * 1 / 8);
+  left: calc(var(--height) * (1 / 2));
+}
+.horizontal {
+  height: calc(var(--height) * 1 / 8);
+  width: calc(var(--height) * 8 / 5);
+}

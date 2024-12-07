@@ -1,0 +1,37 @@
+:root {
+  --height: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+
+.box {
+  flex-grow: 1;
+}
+
+.blue {
+  background-color: blue;
+}
+.white {
+  background-color: whitesmoke;
+}
+.red {
+  background-color: red;
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --side: 200px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-box {
+  background-color: red;
+  height: var(--side);
+  width: var(--side);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  background-color: white;
+  position: absolute;
+  height: calc(var(--side) * 3 / 16);
+  width: calc(var(--side) * 5 / 8);
+}
+
+.second {
+  transform: rotate(90deg);
+}

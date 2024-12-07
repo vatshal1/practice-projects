@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --height: 200px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.flag-box {
+  background-color: white;
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  background-color: red;
+  height: calc(var(--height) * 3 / 5);
+  width: calc(var(--height) * 3 / 5);
+  border-radius: 50%;
+}
