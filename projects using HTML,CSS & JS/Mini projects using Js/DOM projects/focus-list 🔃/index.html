@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title"><span>Focus on</span> Today</h1>
+
+    <main class="task-container">
+      <h3 class="heading">
+        Today
+        <div class="images">
+          <img src="assets/sun-body.svg" class="img-body" />
+          <img src="assets/eye-1.svg" class="img-part eye-1" />
+          <img src="assets/eye-2.svg" class="img-part eye-2" />
+          <img src="assets/mouth.svg" class="img-part mouth" />
+        </div>
+      </h3>
+
+      <p class="progress-msg">Raise the bar by completing your goals!</p>
+
+      <div class="loading-bar">
+        <div class="loading-value">2/3 Completed</div>
+      </div>
+
+      <div class="box">
+        <p class="red-msg">Please set all the 3 goals!</p>
+        <div class="task-box">
+          <div class="custom-checkbox">
+            <img src="assets/tick.svg" alt="done" class="icon" />
+          </div>
+          <input type="text" placeholder="Add new goal..." />
+        </div>
+        <div class="task-box">
+          <div class="custom-checkbox">
+            <img src="assets/tick.svg" alt="done" class="icon" />
+          </div>
+          <input type="text" placeholder="Add new goal..." />
+        </div>
+        <div class="task-box">
+          <div class="custom-checkbox">
+            <img src="assets/tick.svg" alt="done" class="icon" />
+          </div>
+          <input type="text" placeholder="Add new goal..." />
+        </div>
+      </div>
+
+      <h3 class="quote">“Move one step ahead, today!”</h3>
+
+      <footer><p>Made with ❤️ by Vatshal Negi</p></footer>
+    </main>
+  </body>
+</html>
