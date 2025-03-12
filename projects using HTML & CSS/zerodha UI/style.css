@@ -13,7 +13,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding-inline: 20px;
@@ -69,20 +69,114 @@ body {
 /*->  hero section   */
 .hero-section {
   margin-top: 20vh;
+  color: #424242;
+  margin-bottom: 7rem;
 }
 
 .hero-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
 .main-image {
   height: 410px;
   width: 975px;
+  margin-bottom: 2rem;
 }
 
 .main-image img {
   width: 100%;
+}
+
+.hero-section .container h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hero-section .container h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+  font-weight: 400;
+}
+
+.hero-section .container .btn {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #387ed1;
+
+  border: none;
+  cursor: pointer;
+}
+
+.hero-section .container .btn:hover {
+  background-color: #424242;
+}
+
+/* ->whole ecosystem */
+
+.ecosystem .container .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5rem;
+  color: #424242;
+  /* word-spacing: 2px; */
+  line-height: 1.8;
+}
+.ecosystem .container .wrapper .text {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.ecosystem .container .wrapper .text h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.ecosystem .container .wrapper .text .text-box h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.ecosystem .container .wrapper .text .text-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.ecosystem .wrapper .investment-img {
+  width: 60%;
+}
+
+.ecosystem .wrapper .investment-img .img img {
+  width: 100%;
+}
+.ecosystem .wrapper .investment-img .links {
+  text-align: center;
+  margin-block: 1rem;
+}
+.ecosystem .wrapper .investment-img .links a {
+  text-decoration: none;
+  color: #387ed1;
+}
+.ecosystem .wrapper .investment-img .links a:hover {
+  color: #424242;
+}
+#demo-link {
+  margin-left: 3rem;
+}
+
+.ecosystem .container .newspaper-img {
+  display: flex;
+  justify-content: center;
+}
+.ecosystem .container .newspaper-img img {
+  margin-top: 3rem;
+}
+
+/* ->unbeatable pricing  */
+.unbeatable-pricing {
+  margin-block: 7rem;
 }
