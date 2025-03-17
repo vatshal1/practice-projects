@@ -220,3 +220,8 @@ p {
   display: flex;
   align-items: center;
 }
+.unbeatable-pricing .container .pricing-img-box .pricing-img span {
+  position: relative;
+  top: 0.5rem;
+  left: -0.5rem;
+}
