@@ -15,12 +15,12 @@ body {
   position: relative;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; /* ! adjust horizontal margin of the layout */
   padding-inline: 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #424242;
 }
@@ -29,6 +29,16 @@ p {
   font-size: 1rem;
   color: #666;
   line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #387ed1;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    color: #424242;
+  }
 }
 
 /*-> navbar section  */
@@ -47,6 +57,7 @@ p {
   align-items: center;
 }
 .navbar .container {
+  /* padding-inline: 2rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +72,7 @@ p {
 }
 
 .menu ul {
+  /* width: 100%; */
   list-style-type: none;
   display: flex;
 
@@ -113,6 +125,7 @@ p {
   color: white;
   background-color: #387ed1;
 
+  /* outline: none; */
   border: none;
   cursor: pointer;
 }
@@ -129,15 +142,17 @@ p {
   align-items: stretch;
   gap: 5rem;
   color: #424242;
-
+  /* word-spacing: 2px; */
   line-height: 1.8;
 }
 .ecosystem .container .wrapper .text {
+  /* height: 100%; */
+  /* flex-basis: 40%; */
   width: 40%;
-
+  /* padding-right: 5rem; */
   display: flex;
   flex-direction: column;
-
+  /* gap: 2rem; */
   justify-content: space-between;
 }
 
@@ -151,22 +166,19 @@ p {
 
 .ecosystem .wrapper .investment-img {
   width: 60%;
+  /* width: auto; */
 }
 
 .ecosystem .wrapper .investment-img .img img {
   width: 100%;
 }
 .ecosystem .wrapper .investment-img .links {
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
   margin-block: 1rem;
 }
-.ecosystem .wrapper .investment-img .links a {
-  text-decoration: none;
-  color: #387ed1;
-}
-.ecosystem .wrapper .investment-img .links a:hover {
-  color: #424242;
-}
+
 #demo-link {
   margin-left: 3rem;
 }
@@ -194,16 +206,6 @@ p {
 .unbeatable-pricing .container .text-box-price p {
   margin: 1.5rem 0 1rem;
 }
-.unbeatable-pricing .container .text-box-price a {
-  text-decoration: none;
-  color: #387ed1;
-  font-size: 1rem;
-  font-weight: 500;
-
-  &:hover {
-    color: #424242;
-  }
-}
 
 .unbeatable-pricing .container .pricing-img-box {
   display: flex;
@@ -222,6 +224,31 @@ p {
 }
 .unbeatable-pricing .container .pricing-img-box .pricing-img span {
   position: relative;
-  top: 0.5rem;
   left: -0.5rem;
+  top: 0.5rem;
+}
+
+/*-> free education */
+.free-education {
+  margin-bottom: 7rem;
+}
+
+.free-education .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.free-education .container .varsity-img {
+  width: 40%;
+}
+.free-education .container .text-box .text {
+  margin-bottom: 3rem;
+}
+.free-education .container .text-box h1 {
+  margin-bottom: 1.25rem;
+}
+.free-education .container .text-box p {
+  margin-bottom: 1.25rem;
 }
