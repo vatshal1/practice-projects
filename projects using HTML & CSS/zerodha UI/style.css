@@ -41,6 +41,21 @@ a {
   }
 }
 
+button {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #387ed1;
+
+  /* outline: none; */
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #424242;
+  }
+}
+
 /*-> navbar section  */
 .navbar {
   width: 100%;
@@ -117,21 +132,6 @@ a {
   font-size: 1.25rem;
   margin: 1rem 0 2rem;
   font-weight: 400;
-}
-
-.hero-section .container .btn {
-  padding: 10px 30px;
-  font-size: 1.25rem;
-  color: white;
-  background-color: #387ed1;
-
-  /* outline: none; */
-  border: none;
-  cursor: pointer;
-}
-
-.hero-section .container .btn:hover {
-  background-color: #424242;
 }
 
 /* ->whole ecosystem */
@@ -251,4 +251,96 @@ a {
 }
 .free-education .container .text-box p {
   margin-bottom: 1.25rem;
+}
+
+/*-> Zerodha Account  */
+.open-account {
+  margin-bottom: 5rem;
+}
+
+.open-account .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ->footer  */
+
+#footer {
+  padding: 2rem 0 1rem;
+  background-color: #fbfbfb;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 1);
+}
+
+#footer .container .info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+#footer .container .info img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+#footer .container .social-media {
+  color: #666;
+}
+
+#footer .container .social-media span {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+
+  &:hover {
+    color: #387ed1;
+  }
+}
+
+#footer hr {
+  margin-block: 0.5rem;
+}
+
+#footer .container .info .copyright {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+#footer .info h3 {
+  color: #424242;
+  margin-bottom: 1rem;
+}
+#footer .info p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+
+  &:hover {
+    color: #387ed1;
+  }
+}
+
+#footer .guidelines p {
+  font-size: 0.7rem;
+  color: #9b9b9b;
+  margin-bottom: 0.8rem;
+  /* line-height: 1.5rem; */
+}
+#footer .guidelines a {
+  font-size: 0.7rem;
+}
+
+#footer .guidelines .links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#footer .guidelines .links a {
+  font-size: 0.8rem;
+  color: #9b9b9b;
+  margin-right: 1rem;
+
+  &:hover {
+    color: #387ed1;
+  }
 }
