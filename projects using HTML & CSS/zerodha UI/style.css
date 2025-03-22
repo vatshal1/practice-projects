@@ -15,7 +15,7 @@ body {
   position: relative;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto; /* ! adjust horizontal margin of the layout */
+  margin: 0 auto;
   padding-inline: 20px;
 }
 
@@ -47,7 +47,6 @@ button {
   color: white;
   background-color: #387ed1;
 
-  /* outline: none; */
   border: none;
   cursor: pointer;
 
@@ -72,7 +71,6 @@ button {
   align-items: center;
 }
 .navbar .container {
-  /* padding-inline: 2rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +85,6 @@ button {
 }
 
 .menu ul {
-  /* width: 100%; */
   list-style-type: none;
   display: flex;
 
@@ -142,17 +139,12 @@ button {
   align-items: stretch;
   gap: 5rem;
   color: #424242;
-  /* word-spacing: 2px; */
   line-height: 1.8;
 }
 .ecosystem .container .wrapper .text {
-  /* height: 100%; */
-  /* flex-basis: 40%; */
   width: 40%;
-  /* padding-right: 5rem; */
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
   justify-content: space-between;
 }
 
@@ -166,15 +158,12 @@ button {
 
 .ecosystem .wrapper .investment-img {
   width: 60%;
-  /* width: auto; */
 }
 
 .ecosystem .wrapper .investment-img .img img {
   width: 100%;
 }
 .ecosystem .wrapper .investment-img .links {
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
   margin-block: 1rem;
 }
@@ -324,7 +313,6 @@ button {
   font-size: 0.7rem;
   color: #9b9b9b;
   margin-bottom: 0.8rem;
-  /* line-height: 1.5rem; */
 }
 #footer .guidelines a {
   font-size: 0.7rem;
