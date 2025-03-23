@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 3rem;
+  background-color: #afb0ee;
+}
+
+/*-> first  */
+.container .first {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.container .first .img {
+  width: 280px;
+}
+
+.container .first .img img {
+  width: 100%;
+}
+.container .first .text {
+  align-self: center;
+  position: relative;
+  bottom: -4rem;
+}
+.container .first .text h1 {
+  font-size: 3.5rem;
+}
+.container .first .text h2 {
+  font-size: 2rem;
+}
+
+/*-> title  */
+.container .title {
+  margin-bottom: 2rem;
+}
+.container .title h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.container .title p {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/*-> achievement */
+.achievement {
+  margin-bottom: 2rem;
+}
+
+.achievement span {
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+.achievement ul {
+  margin-top: 0.5rem;
+}
+.achievement li {
+  list-style-position: inside; /*new property*/
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/*-> footer  */
+#footer {
+  text-align: end;
+  line-height: 20px;
+  font-size: 12px;
+}
+#footer a {
+  text-decoration: none;
+}
