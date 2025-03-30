@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+}
+.wrapper {
+  width: 1000px;
+  /* height: 90vh; */
+}
+.container {
+  /* width: 1000px; */
+
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  padding: 5rem 0 2rem 2rem;
+}
+
+/* ->left box   */
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-box .text {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-weight: 500;
+  margin-bottom: 12rem;
+}
+
+.text-box .box .colors {
+  margin-bottom: 2rem;
+  display: flex;
+  width: min-content;
+
+  border: 1px solid black;
+  border-radius: 1rem;
+
+  padding: 5px 8px;
+}
+.text-box .box .colors .txt {
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+
+.text-box .box .colors .circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+
+.text-box .box .colors .one {
+  background-color: brown;
+}
+.text-box .box .colors .two {
+  background-color: black;
+}
+
+.text-box .box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.text-box .box .para {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* ->right-box */
+.img-box {
+  position: relative;
+  width: 450px;
+  height: 100%;
+}
+
+.img-box .rotate {
+  display: flex;
+  gap: 0.2rem;
+  font-weight: 600;
+  position: absolute;
+  left: -1rem;
+  bottom: 5rem;
+  transform: rotate(-90deg);
+}
+
+.img-box .img {
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.img-box .img img {
+  /* height: 70%; */
+}
+
+.img-box .img p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.img-box .img p i {
+  font-size: 0.7rem;
+}
+
+.img-box .add {
+  position: absolute;
+  bottom: 14rem;
+  right: 2rem;
+  padding: 2.5rem 0.5rem;
+
+  border: 1px solid black;
+  border-radius: 50%;
+
+  background-color: black;
+  color: white;
+}
