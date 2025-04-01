@@ -22,8 +22,8 @@ body {
 .container {
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  background-color: antiquewhite;
+  justify-content: center;
+  gap: 8rem;
   padding: 5rem 0 0;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .text-box .text {
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 500;
   margin-bottom: 12rem;
 }
@@ -76,16 +76,15 @@ body {
 }
 
 .text-box .box .para {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 /* ->right-box */
 .img-box {
   position: relative;
-  width: 35%;
-
-  /* margin-right: 5rem; */
+  width: 25%;
 }
 
 .img-box .rotate {
@@ -93,9 +92,10 @@ body {
   gap: 0.2rem;
   font-weight: 800;
   position: absolute;
-  left: -6rem;
-  bottom: 5rem;
+  left: -2rem;
+  bottom: 0rem;
   transform: rotate(-90deg);
+  transform-origin: 0 0;
 }
 
 .img-box .img {
@@ -118,19 +118,93 @@ body {
   justify-content: space-between;
   font-weight: 600;
 }
+.img-box .img .ratings {
+  font-size: 12px;
+}
 .img-box .img p i {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
+  color: gold;
 }
 
 .img-box .add {
   position: absolute;
   bottom: 15rem;
   right: -2rem;
-  padding: 2.3rem 0.5rem;
+  padding: 2.15rem 0.5rem;
 
   border: 1px solid black;
   border-radius: 50%;
 
   background-color: black;
   color: white;
+
+  font-size: 14px;
+}
+
+/*-> media query */
+
+@media (max-width: 800px) {
+  body {
+    align-items: stretch;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    gap: 5rem;
+    padding: 0;
+  }
+
+  .text-box .text {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .text-box .box {
+    margin-top: 2rem;
+  }
+  .text-box .box .colors {
+    margin-bottom: 1rem;
+  }
+  .text-box .box .colors .txt {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /* -> right side  */
+
+  .img-box {
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .img-box .rotate {
+    font-weight: 700;
+    font-size: 20px;
+    left: 0;
+    top: -24px;
+    transform: rotate(0deg);
+  }
+
+  .img-box .img {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+
+  .img-box .img img {
+    height: 400px;
+  }
+
+  .img-box .img .ratings {
+    font-size: 14px;
+  }
+  .img-box .img p i {
+    font-size: 0.7rem;
+  }
+
+  .img-box .add {
+    bottom: 23.5rem;
+  }
 }
