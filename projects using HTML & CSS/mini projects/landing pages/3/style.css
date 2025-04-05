@@ -66,3 +66,16 @@ main {
   width: 70%;
   flex-shrink: 0;
 }
+
+.title .text {
+  display: inline-block;
+}
+
+.title h1 {
+  display: inline-block;
+
+  font-size: 6rem;
+  line-height: 8rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
