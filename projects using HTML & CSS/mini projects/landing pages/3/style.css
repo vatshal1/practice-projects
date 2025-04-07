@@ -19,10 +19,9 @@ li {
 }
 .container {
   max-width: 1200px;
-  /* background-color: antiquewhite; */
   margin-inline: auto;
   padding-inline: 1rem;
-  margin-top: 2rem;
+  margin-block: 2rem;
 }
 
 /* ->header  */
@@ -68,7 +67,6 @@ header .second ul {
 /* ->main  */
 
 main {
-  /* background-color: aqua; */
   display: flex;
   overflow-x: auto;
 }
@@ -85,6 +83,15 @@ main::-webkit-scrollbar-thumb {
   width: 80vw;
   flex-shrink: 0;
   margin-bottom: 3rem;
+}
+.title:last-child .text {
+  display: flex;
+  justify-content: center;
+}
+
+.title:last-child {
+  width: 100%;
+  text-align: end;
 }
 
 .title .text {
@@ -110,9 +117,7 @@ main .title:nth-child(2) h1 {
 }
 
 /* ->footer  */
-footer {
-  flex-grow: 1;
-}
+
 footer .img {
   display: flex;
   overflow-x: auto;
@@ -124,7 +129,40 @@ footer .img::-webkit-scrollbar {
 
 footer .img img {
   width: 100vw;
-  height: 320px;
+  height: 350px;
   object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
+}
+
+/* ->responsiveness */
+
+@media (max-width: 700px) {
+  header .first .menu ul li {
+    display: none;
+  }
+
+  #v-1,
+  #v-2 {
+    display: initial;
+  }
+
+  header .second {
+    font-size: 2.2vw;
+    font-weight: 500;
+  }
+  header .second ul {
+    gap: 1rem;
+  }
+
+  .title .text {
+    font-size: 3vw;
+    gap: 4vw;
+  }
+
+  .title h1 {
+    font-size: 13vw;
+    line-height: 15vw;
+    margin-left: 2vw;
+  }
 }
