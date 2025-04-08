@@ -97,7 +97,6 @@ main::-webkit-scrollbar-thumb {
 .title .text {
   display: flex;
   gap: 4rem;
-  /* font-size: 1rem; */
 }
 
 .title .text .text2 {
