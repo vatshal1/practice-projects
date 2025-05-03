@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding-top: 1px;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  text-align: justify;
+}
+.container h1 {
+  font-size: 2rem;
+}
+
+.form {
+  margin-block: 1.5rem;
+}
+
+.form input {
+  padding: 0.4rem 0 0.4rem 0.3rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 0.4rem 1rem;
+
+  font-size: 1.5rem;
+  background-color: rgb(11, 226, 11);
+  color: white;
+
+  &:active {
+    background-color: rgba(11, 226, 11, 0.51);
+  }
+}
+
+.task-list {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  box-shadow: 0 0 5px 0 rgba(129, 124, 124, 0.345);
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.del,
+.edit {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: antiquewhite;
+
+  &:active {
+    background-color: rgba(250, 235, 215, 0.573);
+  }
+}
+
+.selected {
+  opacity: 0.5;
+  background-color: lightgreen;
+}
