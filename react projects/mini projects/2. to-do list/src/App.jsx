@@ -1,40 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ItemsComponent from "./ItemsComponent";
 
 function App() {
-  const [text, setText] = useState("");
-  const [todos, setTodos] = useState([]);
-  // const [check, setCheck] = useState(false);
+  const [inpText, setInpText] = useState("");
+  const [todos, setTodos] = useState(() => {
+    const todoList = localStorage.getItem("items");
+    return todoList ? JSON.parse(todoList) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(todos));
+  }, [todos]);
 
   function clickHandler() {
-    console.log("click handler");
-    if (text.trim()) {
-      setTodos((prev) => [...prev, text]);
-      setText("");
+    // console.log("click handler");
+    if (inpText.trim()) {
+      setTodos((prev) => [
+        ...prev,
+        { id: Math.random(), text: inpText, completed: false },
+      ]);
+      setInpText("");
     }
   }
-
-  function deleteHandler(index) {
-    console.log("delete", index);
-
-    const updateTodos = [...todos];
-    updateTodos.splice(index, 1);
-
-    setTodos(updateTodos);
-    console.log(updateTodos);
-  }
-
-  // function changeHandler(e, index) {
-  //   console.log(e.target.checked, index);
-  //   e.target.checked ? setCheck(true) : setCheck(false);
-  // }
 
   return (
     <>
       <h1>Todo List</h1>
 
       <input
-        onChange={(e) => setText(e.target.value)}
-        value={text}
+        onChange={(e) => setInpText(e.target.value)}
+        value={inpText}
         placeholder="Enter todos"
         className="border"
       />
@@ -46,19 +41,10 @@ function App() {
         Add
       </button>
 
-      {todos.map((task, i) => {
+      {todos.map((item) => {
         return (
-          <div key={i}>
-            <input type="checkbox" id={i} />
-
-            <label htmlFor={i}>{task}</label>
-
-            <button
-              className="px-2 py-1 bg-gray-400 ml-4"
-              onClick={() => deleteHandler(i)}
-            >
-              delete
-            </button>
+          <div key={item.id}>
+            <ItemsComponent task={item} todos={todos} setTodos={setTodos} />
           </div>
         );
       })}
