@@ -32,14 +32,14 @@ export default function ItemsComponent({ task, todos, setTodos }) {
       />
 
       <label
-        className={`${task.completed ? "line-through" : "no-underline"}`}
+        className={`${task.completed ? "line-through" : "no-underline"} ml-1`}
         htmlFor={task.id}
       >
         {task.text}
       </label>
 
       <button
-        className="px-2 py-1 bg-gray-400 ml-4"
+        className="px-2 py-1 bg-gray-400 ml-4 rounded-sm cursor-pointer"
         onClick={() => deleteHandler(task.id)}
       >
         delete

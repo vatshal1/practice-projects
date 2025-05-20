@@ -24,18 +24,18 @@ function App() {
   }
 
   return (
-    <>
-      <h1>Todo List</h1>
+    <div className="ml-4 mt-4">
+      <h1 className="font-bold text-2xl">Todo List</h1>
 
       <input
         onChange={(e) => setInpText(e.target.value)}
         value={inpText}
         placeholder="Enter todos"
-        className="border"
+        className="border rounded-sm outline-0 pl-1 py-1 my-2"
       />
 
       <button
-        className="px-2 py-1 bg-gray-400 ml-4"
+        className="px-2 py-1 bg-gray-400 ml-4 rounded-sm cursor-pointer"
         onClick={() => clickHandler()}
       >
         Add
@@ -43,12 +43,12 @@ function App() {
 
       {todos.map((item) => {
         return (
-          <div key={item.id}>
+          <div key={item.id} className="mt-2">
             <ItemsComponent task={item} todos={todos} setTodos={setTodos} />
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
 
